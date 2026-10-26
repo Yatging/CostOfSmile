@@ -1,0 +1,7 @@
+---
+import { getCollection } from 'astro:content';
+import CollectionPage from '../../components/CollectionPage.astro';
+import { byNewest, publicOnly } from '../../utils/site';
+const items = byNewest(publicOnly(await getCollection('feedback')));
+---
+<CollectionPage title="Supervisor Feedback" eyebrow="05 / Meetings & response" description="A transparent record of guidance, my response and the next action. Feedback is documented as part of the project’s development, not as an appendix." collection="feedback" items={items} categoryField="meeting_with" />

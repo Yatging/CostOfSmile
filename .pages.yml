@@ -1,0 +1,263 @@
+media:
+  - name: images
+    label: Images
+    input: public/uploads/images
+    output: /CostOfSmile/uploads/images
+    rename: safe
+    extensions: [jpg, jpeg, png, webp, gif, svg]
+  - name: media
+    label: Video and files
+    input: public/uploads/media
+    output: /CostOfSmile/uploads/media
+    rename: safe
+    categories: [video, audio, document]
+
+settings:
+  content:
+    merge: true
+  commit:
+    identity: user
+    templates:
+      create: "content: add {name}"
+      update: "content: update {name}"
+      delete: "content: remove {name}"
+      rename: "content: rename {oldFilename} to {newFilename}"
+
+content:
+  - name: process
+    label: Process / Timeline
+    type: collection
+    path: src/content/process
+    filename:
+      template: "{year}-{month}-{day}-{title}.md"
+      field: create
+    view:
+      fields: [title, date, type, draft]
+      primary: title
+      sort: [date, title]
+      search: [title, summary, tags]
+      default:
+        sort: date
+        order: desc
+    fields:
+      - { name: title, label: Title, type: string, required: true }
+      - name: date
+        label: Date
+        type: date
+        required: true
+        options: { format: yyyy-MM-dd }
+      - name: type
+        label: Record type
+        type: select
+        required: true
+        options:
+          values: [Research, Experiment, Meeting, Decision, Documentation]
+      - { name: stage, label: Project stage, type: string, required: true, default: "Research expansion" }
+      - { name: summary, label: Short summary, type: text, required: true }
+      - name: tags
+        label: Tags
+        type: select
+        options:
+          multiple: true
+          values: [economic cost, personal cost, bodily cost, social cost, time, routine, self-management, peer pressure, installation, digital, visual, material test, documentation, supervisor feedback]
+      - name: cover
+        label: Cover image
+        type: image
+        options: { media: images, rename: safe }
+      - { name: external_url, label: Related link, type: string }
+      - { name: video_url, label: Video link, type: string }
+      - { name: featured, label: Feature on home page, type: boolean, default: false }
+      - { name: draft, label: Draft (hide from public site), type: boolean, default: true }
+      - name: body
+        label: Full entry
+        type: rich-text
+        required: true
+        options: { media: images, rename: safe, switcher: true }
+
+  - name: materials
+    label: Material Archive
+    type: collection
+    path: src/content/materials
+    filename: "{title}.md"
+    view:
+      fields: [title, status, material_type, date, draft]
+      primary: title
+      sort: [date, title]
+      search: [title, summary, tags, material_type]
+      default: { sort: date, order: desc }
+    fields:
+      - { name: title, label: Material name, type: string, required: true }
+      - name: date
+        label: Acquired / logged date
+        type: date
+        required: true
+        options: { format: yyyy-MM-dd }
+      - name: status
+        label: Status
+        type: select
+        required: true
+        options:
+          values: [Available, Collecting, Requested, Pending, Archived]
+      - { name: material_type, label: Material type, type: string, required: true }
+      - { name: summary, label: Short summary, type: text, required: true }
+      - name: tags
+        label: Tags
+        type: select
+        options:
+          multiple: true
+          values: [aligners, packaging, calendar, appointments, chat archive, scan, 3D model, ClinCheck, time, stages, routine, privacy, digital body, prediction, residue]
+      - name: cover
+        label: Cover image
+        type: image
+        options: { media: images, rename: safe }
+      - name: gallery
+        label: Gallery
+        type: image
+        options: { media: images, multiple: { max: 12 }, unique: true, rename: safe }
+      - { name: external_url, label: Related link, type: string }
+      - { name: video_url, label: Video link, type: string }
+      - { name: draft, label: Draft (hide from public site), type: boolean, default: true }
+      - name: body
+        label: Notes and possible use
+        type: rich-text
+        required: true
+        options: { media: images, rename: safe, switcher: true }
+
+  - name: research
+    label: Research
+    type: collection
+    path: src/content/research
+    filename: "{title}.md"
+    view:
+      fields: [title, category, creator, date, draft]
+      primary: title
+      sort: [date, title, category]
+      search: [title, summary, creator, tags]
+      default: { sort: date, order: desc }
+    fields:
+      - { name: title, label: Title, type: string, required: true }
+      - name: date
+        label: Date added
+        type: date
+        required: true
+        options: { format: yyyy-MM-dd }
+      - name: category
+        label: Category
+        type: select
+        required: true
+        options:
+          values: [Theory, Artwork, Context]
+      - { name: creator, label: Author / artist / organisation, type: string }
+      - { name: year, label: Publication / work year, type: string }
+      - { name: citation, label: Citation, type: text }
+      - { name: summary, label: Why it matters, type: text, required: true }
+      - name: tags
+        label: Tags
+        type: select
+        options:
+          multiple: true
+          values: [body as project, medical archive, self-tracking, discipline, beauty standards, peer pressure, care, pain, time, data, surveillance, consumption, orthodontics, installation, digital art]
+      - name: cover
+        label: Reference image
+        type: image
+        options: { media: images, rename: safe }
+      - { name: external_url, label: Source / access link, type: string }
+      - { name: video_url, label: Video link, type: string }
+      - { name: draft, label: Draft (hide from public site), type: boolean, default: true }
+      - name: body
+        label: Research notes
+        type: rich-text
+        required: true
+        options: { media: images, rename: safe, switcher: true }
+
+  - name: experiments
+    label: Experiments
+    type: collection
+    path: src/content/experiments
+    filename: "{title}.md"
+    view:
+      fields: [title, status, medium, date, draft]
+      primary: title
+      sort: [date, title, status]
+      search: [title, summary, medium, tags]
+      default: { sort: date, order: desc }
+    fields:
+      - { name: title, label: Experiment title, type: string, required: true }
+      - name: date
+        label: Date
+        type: date
+        required: true
+        options: { format: yyyy-MM-dd }
+      - name: status
+        label: Status
+        type: select
+        required: true
+        options:
+          values: [Planned, In progress, Complete, Failed, Iterating]
+      - { name: medium, label: Medium / format, type: string, required: true }
+      - { name: summary, label: Short summary, type: text, required: true }
+      - name: tags
+        label: Tags
+        type: select
+        options:
+          multiple: true
+          values: [installation, digital, visual, sound, moving image, typography, data visualisation, material test, spatial test, economic cost, bodily cost, social cost, failure, revision]
+      - name: cover
+        label: Cover image
+        type: image
+        options: { media: images, rename: safe }
+      - name: gallery
+        label: Documentation gallery
+        type: image
+        options: { media: images, multiple: { max: 20 }, unique: true, rename: safe }
+      - { name: external_url, label: Demo / related link, type: string }
+      - { name: video_url, label: Video link, type: string }
+      - { name: draft, label: Draft (hide from public site), type: boolean, default: true }
+      - name: body
+        label: Process, result and reflection
+        type: rich-text
+        required: true
+        options: { media: images, rename: safe, switcher: true }
+
+  - name: feedback
+    label: Supervisor Feedback
+    type: collection
+    path: src/content/feedback
+    filename:
+      template: "{year}-{month}-{day}-{title}.md"
+      field: create
+    view:
+      fields: [title, meeting_with, date, draft]
+      primary: title
+      sort: [date, title]
+      search: [title, summary, response, next_action, tags]
+      default: { sort: date, order: desc }
+    fields:
+      - { name: title, label: Meeting title, type: string, required: true }
+      - name: date
+        label: Meeting date
+        type: date
+        required: true
+        options: { format: yyyy-MM-dd }
+      - { name: meeting_with, label: Meeting with, type: string, required: true, default: "Supervisor" }
+      - { name: summary, label: Short summary, type: text, required: true }
+      - { name: response, label: My response, type: text, required: true }
+      - { name: next_action, label: Next action, type: text, required: true }
+      - name: tags
+        label: Tags
+        type: select
+        options:
+          multiple: true
+          values: [meeting, concept, research, materials, experiment, documentation, next actions, revision, assessment]
+      - name: cover
+        label: Cover image
+        type: image
+        options: { media: images, rename: safe }
+      - { name: external_url, label: Related link, type: string }
+      - { name: video_url, label: Video link, type: string }
+      - { name: draft, label: Draft (hide from public site), type: boolean, default: true }
+      - name: body
+        label: Full feedback notes
+        type: rich-text
+        required: true
+        options: { media: images, rename: safe, switcher: true }

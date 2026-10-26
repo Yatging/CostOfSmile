@@ -1,0 +1,12 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { withBase } from '../utils/site';
+---
+<BaseLayout title="Record not found — Cost of Smile">
+  <section class="hero shell">
+    <div class="eyebrow">404 / Missing record</div>
+    <h1>Not<br />found</h1>
+    <p class="page-deck">This record may have moved, remained a draft, or not yet entered the archive.</p>
+    <div class="entry-links"><a class="button" href={withBase()}>Return home</a><a class="button secondary" href={withBase('process/')}>Open process</a></div>
+  </section>
+</BaseLayout>

@@ -1,0 +1,38 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { withBase } from '../../utils/site';
+---
+<BaseLayout title="About & References — Cost of Smile" description="Project statement, methodology and reference policy for Cost of Smile.">
+  <header class="page-hero shell">
+    <div class="eyebrow">06 / Project frame</div>
+    <h1>About & References</h1>
+    <p class="page-deck">A living statement of the project’s scope, ethics and working vocabulary. Formal references will grow alongside the research archive.</p>
+  </header>
+  <section class="section">
+    <div class="shell entry-content">
+      <aside><div class="eyebrow">Project statement</div></aside>
+      <div class="prose">
+        <p><strong>Cost of Smile</strong> uses the artist’s orthodontic treatment as a situated case study. It follows how an apparently ordinary aesthetic intervention reorganises time, habits, bodily attention and self-image.</p>
+        <p>The project began with economic cost—fees, packages and the aligner as a purchased object. It is now expanding toward personal and social costs: repeated inconvenience, compliance, pain, peer pressure, clinical prediction and the expectation to improve the body.</p>
+        <p>The website is not a finished portfolio. It is a process archive that records research, material collection, experiments, failed approaches, feedback and decisions as they happen.</p>
+      </div>
+    </div>
+  </section>
+  <section class="section">
+    <div class="shell entry-content">
+      <aside><div class="eyebrow">Ethics & privacy</div></aside>
+      <div class="prose">
+        <p>Private medical and chat records will be edited before publication. Personal identifiers, clinic staff details and unrelated conversation will be removed. Images and screenshots are treated as source material to translate—not automatically as material to display.</p>
+        <p>Clinical models and visualisations will be used only when access and reuse are permitted. The archive will distinguish between owned documentation, licensed references and external links.</p>
+      </div>
+    </div>
+  </section>
+  <section class="section">
+    <div class="shell entry-content">
+      <aside><div class="eyebrow">Reference policy</div></aside>
+      <div class="prose">
+        <p>Detailed theory, artwork and contextual sources are listed in the <a href={withBase('research/')}>Research archive</a>. Each entry includes a source link or citation and a short note explaining its relevance. This page will later consolidate the final bibliography.</p>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

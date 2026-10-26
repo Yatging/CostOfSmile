@@ -1,0 +1,53 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { formatDate, withBase } from '../utils/site';
+
+interface Props {
+  title: string;
+  summary: string;
+  date: Date;
+  label: string;
+  collection: string;
+  tags?: string[];
+  cover?: string;
+  gallery?: string[];
+  externalUrl?: string;
+  videoUrl?: string;
+  details?: Array<[string, string | undefined]>;
+}
+
+const { title, summary, date, label, collection, tags = [], cover, gallery = [], externalUrl, videoUrl, details = [] } = Astro.props;
+const media = [cover, ...gallery].filter(Boolean) as string[];
+const mediaPath = (path: string) => path.startsWith('/') ? `${import.meta.env.BASE_URL.replace(/\/$/, '')}${path.replace(/^\/CostOfSmile/, '')}` : path;
+---
+
+<BaseLayout title={`${title} — Cost of Smile`} description={summary}>
+  <article class="entry shell">
+    <header class="entry-head">
+      <div>
+        <div class="eyebrow">{collection} / {label}</div>
+        <h1>{title}</h1>
+        <p class="entry-summary">{summary}</p>
+      </div>
+      <dl class="record-panel">
+        <div class="record-row"><dt>Date</dt><dd><time datetime={date.toISOString()}>{formatDate(date)}</time></dd></div>
+        <div class="record-row"><dt>Category</dt><dd>{label}</dd></div>
+        {details.filter(([, value]) => value).map(([key, value]) => <div class="record-row"><dt>{key}</dt><dd>{value}</dd></div>)}
+      </dl>
+    </header>
+    <div class="entry-content">
+      <aside class="entry-aside">
+        <a class="button secondary" href={withBase(`${collection}/`)}>← Back to index</a>
+        {tags.length > 0 && <div class="tag-list">{tags.map((tag) => <span class="tag">{tag}</span>)}</div>}
+      </aside>
+      <div>
+        {media.map((item) => <img class="entry-media" src={mediaPath(item)} alt="Documentation image" loading="lazy" />)}
+        <div class="prose"><slot /></div>
+        {(externalUrl || videoUrl) && <div class="entry-links">
+          {externalUrl && <a class="button" href={externalUrl} target="_blank" rel="noreferrer">Open reference ↗</a>}
+          {videoUrl && <a class="button secondary" href={videoUrl} target="_blank" rel="noreferrer">Watch video ↗</a>}
+        </div>}
+      </div>
+    </div>
+  </article>
+</BaseLayout>

@@ -1,0 +1,70 @@
+---
+import '../styles/global.css';
+import { withBase } from '../utils/site';
+
+interface Props {
+  title?: string;
+  description?: string;
+}
+
+const {
+  title = 'Cost of Smile — FYP Process Archive',
+  description = 'An evolving research archive tracing the economic, bodily and social costs of orthodontic treatment.'
+} = Astro.props;
+const canonical = new URL(Astro.url.pathname, Astro.site);
+const currentPath = Astro.url.pathname;
+const nav = [
+  ['Project', ''],
+  ['Process', 'process/'],
+  ['Materials', 'materials/'],
+  ['Research', 'research/'],
+  ['Experiments', 'experiments/'],
+  ['Feedback', 'feedback/'],
+  ['About', 'about/']
+];
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="theme-color" content="#f3f1e9" />
+    <meta name="description" content={description} />
+    <link rel="icon" type="image/svg+xml" href={withBase('favicon.svg')} />
+    <link rel="canonical" href={canonical} />
+    <title>{title}</title>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <div class="shell header-inner">
+        <a class="brand" href={withBase()} aria-label="Cost of Smile home">
+          <span class="brand-mark" aria-hidden="true"></span>
+          <span>Cost of Smile</span>
+        </a>
+        <nav class="site-nav" aria-label="Primary navigation">
+          {nav.map(([label, path]) => {
+            const href = withBase(path);
+            const normalized = href.replace(/\/$/, '');
+            const active = currentPath.replace(/\/$/, '') === normalized;
+            return <a href={href} aria-current={active ? 'page' : undefined}>{label}</a>;
+          })}
+        </nav>
+        <span class="phase-chip">Stage 01 · Research</span>
+      </div>
+    </header>
+    <main id="main">
+      <slot />
+    </main>
+    <footer class="site-footer">
+      <div class="shell footer-grid">
+        <div>
+          <div class="footer-title">Cost of Smile</div>
+          <div class="footer-meta">FYP process archive · living document<br />Last structural update: 26 Oct 2026</div>
+        </div>
+        <a class="update-link" href={withBase('admin/')} rel="nofollow">Admin / Update ↗</a>
+      </div>
+    </footer>
+  </body>
+</html>

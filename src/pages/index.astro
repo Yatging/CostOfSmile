@@ -1,0 +1,72 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import EntryCard from '../components/EntryCard.astro';
+import { byNewest, publicOnly, withBase } from '../utils/site';
+
+const process = byNewest(publicOnly(await getCollection('process')));
+const materials = publicOnly(await getCollection('materials'));
+const research = publicOnly(await getCollection('research'));
+const experiments = publicOnly(await getCollection('experiments'));
+const latest = process.slice(0, 3);
+---
+
+<BaseLayout>
+  <section class="hero">
+    <div class="shell hero-grid">
+      <div>
+        <div class="eyebrow">FYP / Process archive / 2026–27</div>
+        <h1>Cost<br />of Smile</h1>
+        <p class="hero-statement">An evolving art research project tracing what an “improved” smile costs—not only in money, but in time, bodily discipline, daily friction and social expectation.</p>
+      </div>
+      <dl class="record-panel">
+        <div class="record-row"><dt>Status</dt><dd>Active / research expansion</dd></div>
+        <div class="record-row"><dt>Current focus</dt><dd>Personal, bodily and social cost</dd></div>
+        <div class="record-row"><dt>Method</dt><dd>Material archive + translation experiments</dd></div>
+        <div class="record-row"><dt>Updated</dt><dd>26 October 2026</dd></div>
+      </dl>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="shell">
+      <div class="section-head">
+        <div><div class="eyebrow">01 / Core question</div><h2 class="section-title">What does a smile cost?</h2></div>
+        <p class="section-intro">The project begins with orthodontic aligners as both a consumer product and a system of bodily management. It asks how treatment turns the body into a timed project—measured in stages, appointments, habits, images and predictions.</p>
+      </div>
+      <div class="axis-grid">
+        <article class="axis" style="--level: 1"><span class="axis-number">COST / 01</span><h3>Economic</h3><p>Treatment fees, packaging, consumption and the monetary promise of a more acceptable smile.</p></article>
+        <article class="axis" style="--level: 2"><span class="axis-number">COST / 02</span><h3>Bodily & personal</h3><p>Wear time, pain, repeated removal and cleaning, appointments, waiting and constant self-management.</p></article>
+        <article class="axis" style="--level: 3"><span class="axis-number">COST / 03</span><h3>Social</h3><p>Peer pressure, aesthetic norms and the quiet expectation that teeth—and the self—should be improved.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="shell">
+      <div class="section-head">
+        <div><div class="eyebrow">02 / Current archive</div><h2 class="section-title">Evidence in progress</h2></div>
+        <p class="section-intro">Every trace is treated as working material rather than proof alone: used aligners, packaging, calendar entries, appointment messages and future digital models.</p>
+      </div>
+      <div class="index-line"><span>Public records</span><span>{process.length + materials.length + research.length + experiments.length} total</span></div>
+      <div class="card-grid">
+        {latest.map((item) => <EntryCard id={item.id} collection="process" title={item.data.title} summary={item.data.summary} date={item.data.date} label={item.data.type} tags={item.data.tags} cover={item.data.cover} />)}
+      </div>
+      <div class="entry-links"><a class="button" href={withBase('process/')}>View full process</a><a class="button secondary" href={withBase('materials/')}>Browse materials</a></div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="shell">
+      <div class="section-head">
+        <div><div class="eyebrow">03 / Working method</div><h2 class="section-title">Archive → translate → test</h2></div>
+        <p class="section-intro">The archive does not simply display private records. Each source is edited, abstracted or re-performed to find an artistic form that can make repetition, pressure and discipline perceptible without becoming a literal medical display.</p>
+      </div>
+      <div class="axis-grid">
+        <article class="axis"><span class="axis-number">STEP / A</span><h3>Collect</h3><p>Preserve dates, objects, messages, sounds, scans and observations with enough context to remain meaningful.</p></article>
+        <article class="axis"><span class="axis-number">STEP / B</span><h3>Translate</h3><p>Extract patterns—time, repetition, pressure, waiting, compliance—rather than displaying raw records directly.</p></article>
+        <article class="axis"><span class="axis-number">STEP / C</span><h3>Test</h3><p>Try spatial, material, visual and digital forms. Keep unsuccessful tests visible as evidence of decisions.</p></article>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

@@ -1,0 +1,7 @@
+---
+import { getCollection } from 'astro:content';
+import CollectionPage from '../../components/CollectionPage.astro';
+import { byNewest, publicOnly } from '../../utils/site';
+const items = byNewest(publicOnly(await getCollection('process')));
+---
+<CollectionPage title="Process / Timeline" eyebrow="01 / Evidence of effort" description="A dated record of research, experiments, decisions, revisions and meetings. The timeline keeps both visible outcomes and the work that led to them." collection="process" items={items} categoryField="type" />

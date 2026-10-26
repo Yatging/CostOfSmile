@@ -1,0 +1,12 @@
+---
+import { getCollection, render, type CollectionEntry } from 'astro:content';
+import EntryPage from '../../components/EntryPage.astro';
+export async function getStaticPaths() {
+  const entries = (await getCollection('feedback')).filter((entry) => !entry.data.draft);
+  return entries.map((entry) => ({ params: { id: entry.id }, props: { entry } }));
+}
+interface Props { entry: CollectionEntry<'feedback'>; }
+const { entry } = Astro.props;
+const { Content } = await render(entry);
+---
+<EntryPage title={entry.data.title} summary={entry.data.summary} date={entry.data.date} label={entry.data.meeting_with} collection="feedback" tags={entry.data.tags} cover={entry.data.cover} externalUrl={entry.data.external_url} videoUrl={entry.data.video_url} details={[["Response", entry.data.response], ["Next", entry.data.next_action]]}><Content /></EntryPage>

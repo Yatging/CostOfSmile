@@ -1,0 +1,7 @@
+---
+import { getCollection } from 'astro:content';
+import CollectionPage from '../../components/CollectionPage.astro';
+import { byNewest, publicOnly } from '../../utils/site';
+const items = byNewest(publicOnly(await getCollection('research')));
+---
+<CollectionPage title="Research" eyebrow="03 / Reading & looking" description="Theory, artworks and contexts that sharpen the project. Each entry records not only a source, but why it matters to the work." collection="research" items={items} categoryField="category" />

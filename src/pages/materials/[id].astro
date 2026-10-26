@@ -1,0 +1,12 @@
+---
+import { getCollection, render, type CollectionEntry } from 'astro:content';
+import EntryPage from '../../components/EntryPage.astro';
+export async function getStaticPaths() {
+  const entries = (await getCollection('materials')).filter((entry) => !entry.data.draft);
+  return entries.map((entry) => ({ params: { id: entry.id }, props: { entry } }));
+}
+interface Props { entry: CollectionEntry<'materials'>; }
+const { entry } = Astro.props;
+const { Content } = await render(entry);
+---
+<EntryPage title={entry.data.title} summary={entry.data.summary} date={entry.data.date} label={entry.data.status} collection="materials" tags={entry.data.tags} cover={entry.data.cover} gallery={entry.data.gallery} externalUrl={entry.data.external_url} videoUrl={entry.data.video_url} details={[["Type", entry.data.material_type]]}><Content /></EntryPage>

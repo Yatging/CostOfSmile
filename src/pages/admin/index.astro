@@ -1,0 +1,37 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+---
+<BaseLayout title="Update the archive — Cost of Smile" description="Private publishing entry for the Cost of Smile process archive.">
+  <header class="page-hero shell">
+    <div class="eyebrow">Admin / Publishing</div>
+    <h1>Update the archive</h1>
+    <p class="page-deck">Content is published through Pages CMS. It writes directly to the project repository and automatically triggers a new website build—no manual GitHub editing or local software required.</p>
+  </header>
+  <section class="section">
+    <div class="shell entry-content">
+      <aside><div class="eyebrow">First-time setup</div></aside>
+      <div class="prose">
+        <ol>
+          <li>Open Pages CMS and sign in with the GitHub account that owns <strong>Yatging/CostOfSmile</strong>.</li>
+          <li>Install the Pages CMS GitHub App for this repository only.</li>
+          <li>Select <strong>CostOfSmile</strong>. The editing forms are already configured.</li>
+        </ol>
+        <p class="notice">The CMS never needs a token pasted into this site. GitHub handles authorization through the installed App.</p>
+        <div class="entry-links"><a class="button" href="https://app.pagescms.org/" target="_blank" rel="noreferrer">Open Pages CMS ↗</a></div>
+      </div>
+    </div>
+  </section>
+  <section class="section">
+    <div class="shell entry-content">
+      <aside><div class="eyebrow">Routine update</div></aside>
+      <div class="prose">
+        <ol>
+          <li>Choose Process, Research, Experiments, Materials or Supervisor Feedback.</li>
+          <li>Create a record; add the title, date, summary, body and optional media or links.</li>
+          <li>Keep <strong>Draft</strong> on while working, then turn it off and save when ready.</li>
+          <li>Wait about one to three minutes for the public site to rebuild.</li>
+        </ol>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

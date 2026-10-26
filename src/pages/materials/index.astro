@@ -1,0 +1,7 @@
+---
+import { getCollection } from 'astro:content';
+import CollectionPage from '../../components/CollectionPage.astro';
+import { byNewest, publicOnly } from '../../utils/site';
+const items = byNewest(publicOnly(await getCollection('materials')));
+---
+<CollectionPage title="Material Archive" eyebrow="02 / Source material" description="Physical and digital traces of treatment: aligners, packaging, schedules, appointment records and clinical models. Status labels make gaps and pending access visible." collection="materials" items={items} categoryField="status" />

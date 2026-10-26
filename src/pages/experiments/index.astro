@@ -1,0 +1,7 @@
+---
+import { getCollection } from 'astro:content';
+import CollectionPage from '../../components/CollectionPage.astro';
+import { byNewest, publicOnly } from '../../utils/site';
+const items = byNewest(publicOnly(await getCollection('experiments')));
+---
+<CollectionPage title="Experiments" eyebrow="04 / Tests & failures" description="Spatial, material, digital and visual studies. Failed or paused experiments remain part of the archive because they explain how the work changes." collection="experiments" items={items} categoryField="status" />
