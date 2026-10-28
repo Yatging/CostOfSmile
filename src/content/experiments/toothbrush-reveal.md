@@ -1,6 +1,6 @@
 ---
 title: Toothbrush Reveal — brushing to uncover hidden costs
-summary: A toothbrush becomes an interactive revealing tool: repeated brushing gradually exposes small inconveniences, routines and self-monitoring requirements hidden beneath a white surface.
+summary: "A toothbrush becomes an interactive revealing tool: repeated brushing gradually exposes small inconveniences, routines and self-monitoring requirements hidden beneath a white surface."
 date: 2026-10-26
 status: Planned
 medium: Interactive installation / removable coating / modified toothbrush
