@@ -70,6 +70,11 @@ h1 { margin-bottom: 1.4rem; font-size: clamp(3.7rem, 10vw, 9rem); line-height: .
 .page-hero h1 { font-size: clamp(3rem, 8vw, 6.5rem); max-width: 12ch; margin-bottom: 1rem; }
 .page-deck { max-width: 45rem; font-size: 1.08rem; color: var(--muted); }
 .index-line { display: flex; justify-content: space-between; gap: 1rem; padding: .8rem 0; border-top: 1px solid var(--line); font: .73rem var(--mono); color: var(--muted); text-transform: uppercase; letter-spacing: .07em; }
+.timeline-overview { padding: 0 0 2.5rem; }
+.milestone-list { list-style: none; margin: 0; padding: 0; border-bottom: 1px solid var(--line); }
+.milestone-list li { display: grid; grid-template-columns: 9rem 1fr; gap: 1rem; padding: .85rem 0; border-top: 1px solid var(--line); }
+.milestone-list time { font: .7rem/1.5 var(--mono); color: var(--muted); text-transform: uppercase; letter-spacing: .05em; }
+.milestone-list a { text-underline-offset: .2em; }
 
 .card { min-height: 20rem; border: 1px solid var(--line); border-radius: var(--radius); background: rgba(255,255,255,.48); overflow: hidden; display: flex; flex-direction: column; transition: transform .18s ease, background .18s ease; }
 .card:hover { transform: translateY(-3px); background: rgba(255,255,255,.7); }
@@ -96,14 +101,29 @@ h1 { margin-bottom: 1.4rem; font-size: clamp(3.7rem, 10vw, 9rem); line-height: .
 .entry h1 { font-size: clamp(2.8rem, 7vw, 6.7rem); max-width: 13ch; }
 .entry-summary { max-width: 42rem; font-size: 1.15rem; color: var(--muted); }
 .entry-content { display: grid; grid-template-columns: minmax(180px, .4fr) minmax(0, 1.6fr); gap: clamp(2rem, 8vw, 8rem); padding-top: 3rem; }
+.entry-content > * { min-width: 0; }
 .entry-aside { position: sticky; top: 6rem; align-self: start; }
-.prose { max-width: 48rem; font-size: 1.04rem; }
+.prose { min-width: 0; max-width: 48rem; font-size: 1.04rem; }
 .prose h2 { margin: 2.8rem 0 1rem; font-size: 1.8rem; letter-spacing: -.035em; }
 .prose h3 { margin: 2rem 0 .7rem; }
 .prose p, .prose ul, .prose ol { margin-bottom: 1.25rem; }
 .prose li + li { margin-top: .45rem; }
 .prose blockquote { margin: 2rem 0; padding: 1rem 0 1rem 1.4rem; border-left: 3px solid var(--accent-strong); font-size: 1.2rem; color: var(--muted); }
-.prose a { color: var(--accent-strong); }
+.prose a { color: var(--accent-strong); overflow-wrap: anywhere; }
+.proposal-figure { margin: 2.5rem 0; }
+.proposal-figure img { width: 100%; border: 1px solid var(--line); border-radius: var(--radius); background: var(--surface); }
+.proposal-figure-small img { width: min(100%, 34rem); }
+.proposal-figure figcaption { margin-top: .65rem; color: var(--muted); font: .7rem/1.5 var(--mono); }
+.table-scroll { width: 100%; min-width: 0; max-width: 100%; margin: 2rem 0; overflow-x: auto; border: 1px solid var(--line); border-radius: var(--radius); background: rgba(255,255,255,.4); }
+.table-scroll table { width: 100%; min-width: 42rem; border-collapse: collapse; font-size: .88rem; }
+.table-scroll th, .table-scroll td { padding: .8rem .9rem; border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); text-align: left; vertical-align: top; }
+.table-scroll th { background: var(--ink); color: white; font: 600 .68rem/1.4 var(--mono); text-transform: uppercase; letter-spacing: .05em; }
+.table-scroll tr:last-child td { border-bottom: 0; }
+.table-scroll th:last-child, .table-scroll td:last-child { border-right: 0; }
+.document-actions { display: flex; flex-wrap: wrap; gap: .7rem; }
+.document-actions-top { margin: 0 0 2rem; }
+.document-actions-bottom { margin: 3rem 0 0; padding-top: 2rem; border-top: 1px solid var(--line); }
+.document-actions .button { color: white; }
 .entry-media { margin: 2.5rem 0; border-radius: var(--radius); border: 1px solid var(--line); overflow: hidden; }
 .entry-links { display: flex; flex-wrap: wrap; gap: .7rem; margin-top: 2rem; }
 .button { display: inline-flex; justify-content: center; align-items: center; gap: .5rem; min-height: 2.8rem; padding: .7rem 1rem; border: 1px solid var(--ink); border-radius: 999px; text-decoration: none; font: 600 .72rem var(--mono); text-transform: uppercase; letter-spacing: .06em; background: var(--ink); color: white; }
@@ -134,6 +154,10 @@ h1 { margin-bottom: 1.4rem; font-size: clamp(3.7rem, 10vw, 9rem); line-height: .
   .axis-grid, .card-grid { grid-template-columns: 1fr; }
   .axis { min-height: 14rem; }
   .entry-aside { position: static; }
+  .proposal-figure { margin: 2rem 0; }
+  .table-scroll { margin-inline: 0; }
+  .document-actions .button { width: 100%; }
+  .milestone-list li { grid-template-columns: 1fr; gap: .25rem; }
   .footer-grid { grid-template-columns: 1fr; }
 }
 

@@ -27,6 +27,7 @@ const categories = [...new Set(items.map((item) => String(item.data[categoryFiel
     <h1>{title}</h1>
     <p class="page-deck">{description}</p>
   </header>
+  <slot />
   <section class="section">
     <div class="shell">
       <div class="index-line"><span>Archive index</span><span>{String(items.length).padStart(2, '0')} records</span></div>
