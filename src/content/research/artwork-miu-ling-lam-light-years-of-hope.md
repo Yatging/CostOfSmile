@@ -1,10 +1,12 @@
 ---
 title: "Field visit — Miu Ling Lam & Cody Chow, Light Years of Hope"
-summary: "A first-hand reference from Microwave International New Media Arts Festival 2026: spoken wishes are translated into light and sound through an interactive xenon-plasma work."
+summary: "A first-hand artwork reference from Microwave 2026: a 2023 interactive work that translates spoken wishes into light and sound through a xenon-plasma system."
 date: 2026-10-30
 category: Artwork
 creator: Miu Ling Lam, in collaboration with Cody Chow
-external_url: https://www.etnet.com.hk/www/tc/diva/414518/
+year: "2023"
+cover: /CostOfSmile/uploads/images/microwave-2026/light-years-of-hope-installation.svg
+external_url: https://www.microwavefest.net/festival2026/
 tags:
   - field visit
   - interaction
@@ -15,11 +17,21 @@ draft: false
 
 ## Field visit
 
-I visited the opening of **Microwave International New Media Arts Festival 2026 — The Science of Immateriality** at Hong Kong City Hall on 30 October 2026.
+I visited the opening of **Microwave International New Media Arts Festival 2026 — _The Science of Immateriality_** at Hong Kong City Hall on 30 October 2026.
 
-This entry is different from the online references elsewhere in the archive: I encountered the work in person and documented both the interaction space and its exhibition wall text.
+This entry differs from the online references elsewhere in the archive because I encountered the work in person and photographed both the installation and its exhibition wall text.
 
-**Light Years of Hope / 希望光年** is presented by **Miu Ling Lam**, in collaboration with **Cody Chow**. A current festival report describes the interaction as an invitation for viewers to speak a wish into the work; the wish is then translated into changing light and sound in a xenon plasma ring.
+<figure>
+  <img src="/CostOfSmile/uploads/images/microwave-2026/light-years-of-hope-installation.svg" alt="Field photograph of Light Years of Hope at Microwave 2026, showing the luminous ring installation in a red-lit interaction space">
+  <figcaption>Field documentation, 30 Oct 2026 — the installation during the Microwave 2026 opening.</figcaption>
+</figure>
+
+The wall label identifies **_Light Years of Hope / 希望光年_** as a **2023** work by **Miu Ling Lam, in collaboration with Cody Chow**. Festival coverage describes the interaction as inviting viewers to speak a wish; the system translates that intangible input into changing light and sound through a xenon-plasma ring.
+
+<figure>
+  <img src="/CostOfSmile/uploads/images/microwave-2026/light-years-of-hope-walltext.svg" alt="Field photograph of the exhibition wall label for Light Years of Hope, showing the title, 2023 date, Miu Ling Lam and Cody Chow credit">
+  <figcaption>Exhibition wall text photographed on site. The label records the work as 2023 and credits Miu Ling Lam in collaboration with Cody Chow.</figcaption>
+</figure>
 
 ## What I observed
 
@@ -61,14 +73,14 @@ I should not imitate the red lighting, plasma ring or wish-input mechanic simply
 
 For Cost of Smile, the interaction needs to come directly from orthodontic actions and records. The useful lesson is **translation**, not visual quotation.
 
-## First-hand documentation
+## Source notes
 
-The site visit was documented with photographs of the installation and exhibition wall text. These photographs are part of the project process archive and can later be added to the page through the existing CMS media library if a separate image file rather than an embedded page image is preferred.
+The **2023 date and collaboration credit** come from the exhibition wall label photographed during the field visit. The **2026 exhibition context** is confirmed by Microwave's festival site and contemporary festival coverage. The description of the wish-to-light-and-sound interaction is consistent with DIVA / etnet's 28 October 2026 festival preview and the work's listing in SIGGRAPH Asia 2026.
 
 ## References
 
-DIVA / etnet. (2026, October 28). *走進 2026「微波國際新媒體藝術節」，在科技與靈魂的「裂縫」中尋找光*. https://www.etnet.com.hk/www/tc/diva/414518/
+Microwave International New Media Arts Festival. (2026). _The Science of Immateriality_. https://www.microwavefest.net/festival2026/
 
-DB3HK. (2026, October 30). *微波藝術節三十周年的主題展，在看什麼？* https://www.db3hk.com/post/microwave-30-immateriality/
+DIVA / etnet. (2026, October 28). _走進 2026「微波國際新媒體藝術節」，在科技與靈魂的「裂縫」中尋找光_. https://www.etnet.com.hk/www/tc/diva/414518/
 
-SIGGRAPH Asia 2026. (2026). *Miu Ling Lam — Light Years of Hope*. https://sa2026.conference-schedule.org/presenter/?uid=401543
+SIGGRAPH Asia 2026. (2026). _Miu Ling Lam — Light Years of Hope_. https://sa2026.conference-schedule.org/presenter/?uid=401543
