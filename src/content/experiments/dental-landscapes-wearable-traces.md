@@ -20,13 +20,15 @@ gallery: []
 
 “牙套盒牙齿起起伏伏，或许可以做成‘立体山水画’？亦或是剪裁成一颗一颗牙，做成戒指？”
 
+English translation of the idea note: “The teeth rise and fall in the aligner case. Could those contours become a three-dimensional landscape painting? Or could I cut out the individual tooth shapes and make them into rings?”
+
 The starting observation is the rise and fall of the dental arch held in an old transparent aligner. The aligner itself, and possibly its box or an available dental mould/model, could become material for a new form. Access to suitable boxes, moulds and models still needs to be confirmed.
 
 ## Direction A — miniature landscape / 微缩立体山水、地形画
 
 An intact aligner's cusps, hollows and curved arch could read as ridges, valleys and a miniature terrain. Several retired stages might be arranged as layered relief in a shallow frame or box. A box could act as a viewing chamber; a model or replica could help explore positive and negative forms, if available.
 
-Transparency, spacing, side lighting and shadows are possible tests, not established results. The composition could evoke 山水 through depth, empty space and shifting viewpoints without pretending to reproduce a geographical place.
+Transparency, spacing, side lighting and shadows are possible tests, not established results. The composition could evoke Chinese landscape painting (山水, *shanshui*) through depth, empty space and shifting viewpoints without pretending to reproduce a geographical place.
 
 **The conceptual move is from bodily contour to landscape.** Something originally designed to guide a private bodily change becomes a terrain that can be looked across. If treatment stages remain identifiable, their gradual differences could suggest the body's repeated remaking over time. A beautiful miniature alone may hide the labour of treatment, so the test is whether a restrained stage/date label or a short sequence can retain that history.
 

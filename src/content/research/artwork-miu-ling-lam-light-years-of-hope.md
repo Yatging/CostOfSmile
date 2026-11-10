@@ -81,6 +81,6 @@ The **2023 date and collaboration credit** come from the exhibition wall label p
 
 Microwave International New Media Arts Festival. (2026). _The Science of Immateriality_. https://www.microwavefest.net/festival2026/
 
-DIVA / etnet. (2026, October 28). _走進 2026「微波國際新媒體藝術節」，在科技與靈魂的「裂縫」中尋找光_. https://www.etnet.com.hk/www/tc/diva/414518/
+DIVA / etnet. (2026, October 28). _走進 2026「微波國際新媒體藝術節」，在科技與靈魂的「裂縫」中尋找光_ [Inside the 2026 Microwave International New Media Arts Festival: Looking for light in the cracks between technology and the soul]. https://www.etnet.com.hk/www/tc/diva/414518/
 
 SIGGRAPH Asia 2026. (2026). _Miu Ling Lam — Light Years of Hope_. https://sa2026.conference-schedule.org/presenter/?uid=401543
