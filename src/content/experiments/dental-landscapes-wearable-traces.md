@@ -83,6 +83,8 @@ These are **conceptual precedents**, not evidence that someone has already made 
 
 ## Connected records
 
+- [10 November — Orthodontic Strata, a planned two-view study of the landscape direction](/CostOfSmile/experiments/orthodontic-strata/)
+
 - [6 November 2026 Process timeline record](/CostOfSmile/process/2026-11-06-dental-landscapes-wearable-traces/)
 - [Used aligners and packaging](/CostOfSmile/materials/used-aligners-and-packaging/)
 - [Clinical models and scans](/CostOfSmile/materials/clinical-models-and-scans/)
