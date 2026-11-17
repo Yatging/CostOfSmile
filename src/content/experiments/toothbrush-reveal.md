@@ -69,5 +69,4 @@ Material research links:
 
 ## 17 November 2026 / Concept v2
 
-This experiment continues in [Wet/Dry Orthodontic Landscape — 牙套真山水与枯山水（Concept v2）](/CostOfSmile/experiments/wet-dry-orthodontic-landscape/): a proposed wet/dry diptych with brushing and a treatment-stage packaging wall. Concept and AI visualization only; physical tests pending. 本实验延伸为双联山水、刷拭互动与包装档案墙，尚待实物验证。
-
+This experiment continues in [Wet/Dry Orthodontic Landscape — 牙套真山水与枯山水（Concept v2）](/CostOfSmile/experiments/wet-dry-orthodontic-landscape/): a proposed wet/dry diptych with brushing and a treatment-stage packaging wall. 本实验延伸为双联山水、刷拭互动与包装档案墙。
