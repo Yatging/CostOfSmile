@@ -48,6 +48,10 @@ The aim is not to find artworks that “look like Invisalign.” The useful ques
 
 Each case-study page records the medium, method, specific relevance, limitations, external sources and image credit.
 
+## 6. Orthodontic landscapes, material reuse and body-image pressures
+
+A further twelve individual cases have been archived after the landscape, packaging and wearable-jewellery experiments. These distinguish **direct aligner-material precedents** (Claire Hashman), **dental forms and landscapes** (David Alban, Stephan Huber, Devon Stackonis), **social/aesthetic and wearable precedents** (Sean Synnuck, Katja Prins), and **landscape/material methods** (Tara Donovan, Yuken Teruya, Maya Lin, Ryōan-ji, Mirei Shigemori, Brian Thompson). Use the [illustrated-source case-study directory](/CostOfSmile/research/orthodontic-strata-references/) to reach each separate entry, its original photographs and APA-style references.
+
 ## Selected external starting points
 
 M+, Hong Kong. (n.d.). *Tehching Hsieh: One Year Performance 1980–1981*. https://www.mplus.org.hk/en/collection/objects/one-year-performance-19801981-2013463/
