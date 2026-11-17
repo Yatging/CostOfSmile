@@ -104,3 +104,9 @@ First reduce reflections from the shelves and compare black and grey backgrounds
 **待上传的实物资料。** Pages CMS 的 Documentation gallery 已留空。首轮计划上传匿名侧视、同组俯视、袋褶 24 小时前后对照与一张失败测试，每张配阶段、间距、灯位和实际观察。本文用于艺术展陈研究。
 
 [11 月 6 日山水与戒指灵感](/CostOfSmile/experiments/dental-landscapes-wearable-traces/) · [11 月 10 日时间线](/CostOfSmile/process/2026-11-10-orthodontic-strata/) · [参考文献与作品图来源](/CostOfSmile/research/orthodontic-strata-references/)
+
+
+## 17 November 2026 / Concept v2
+
+This experiment continues in [Wet/Dry Orthodontic Landscape — 牙套真山水与枯山水（Concept v2）](/CostOfSmile/experiments/wet-dry-orthodontic-landscape/): a proposed wet/dry diptych with brushing and a treatment-stage packaging wall. Concept and AI visualization only; physical tests pending. 本实验延伸为双联山水、刷拭互动与包装档案墙，尚待实物验证。
+

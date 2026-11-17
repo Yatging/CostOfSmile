@@ -65,3 +65,9 @@ Material research links:
 - Scratch-off overview: https://myscratchoffs.com/pages/faqs-for-all-aspects-of-my-scratch-offs
 - Washable paint properties: https://www.crayola.com/en-ca/faqs/what-are-the-differences-between-crayola-acrylic-tempera-and-washable-paints-faq
 - Art masking fluid: https://www.winsornewton.com/products/watercolour-medium-art-masking-fluid
+
+
+## 17 November 2026 / Concept v2
+
+This experiment continues in [Wet/Dry Orthodontic Landscape — 牙套真山水与枯山水（Concept v2）](/CostOfSmile/experiments/wet-dry-orthodontic-landscape/): a proposed wet/dry diptych with brushing and a treatment-stage packaging wall. Concept and AI visualization only; physical tests pending. 本实验延伸为双联山水、刷拭互动与包装档案墙，尚待实物验证。
+
