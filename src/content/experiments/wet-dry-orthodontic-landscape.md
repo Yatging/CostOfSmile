@@ -68,14 +68,6 @@ Material comparisons include simulated water surfaces and stable toothpaste-like
 5. Arrange a small supervised viewer trial. Ask what viewers notice before and after brushing and how they connect the gesture to repeated care.
 6. Add dated observations, costs, repair frequency and photographs to the archive, and discuss the next iteration with Miu.
 
-## Supervisor feedback questions
-
-- How does the wet/dry contrast bring bodily labour into the landscape?
-- Where should brushing take place: on the main mountains or on replaceable samples beside them?
-- How can the packaging wall preserve the specificity of my treatment while protecting personal information?
-- What do real mouthwash and toothpaste contribute compared with simulated materials?
-- How can the first prototype strengthen the relationship between geological change, tooth movement and repeated care?
-
 ## 中文全文 <span id="chinese"></span>
 
 **Concept v2｜2026-11-17**
@@ -133,10 +125,3 @@ Material comparisons include simulated water surfaces and stable toothpaste-like
 5. 安排小规模监督观看测试，记录刷前刷后的理解，以及观众如何把动作与重复护理联系起来。
 6. 按日期归档观察、成本、修复频率和照片，与 Miu 讨论下一轮调整。
 
-### Supervisor feedback questions / 给导师的问题
-
-- 左右山水对照如何把身体劳动带入景观？
-- 刷拭发生在主山体还是旁边可换片更好？
-- 包装墙怎样保留个人治疗经验并保护隐私？
-- 相比模拟材料，真实漱口水与牙膏带来了什么？
-- 首轮小样怎样加强地质变化、牙齿移动与重复护理之间的关系？

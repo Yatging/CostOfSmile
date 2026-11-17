@@ -17,7 +17,7 @@ The [10 November Orthodontic Strata proposal](/CostOfSmile/process/2026-11-10-or
 2. Let viewers use toothbrushes to remove the mountain colour, exposing the transparent aligners. This connects the landscape to [Toothbrush Reveal](/CostOfSmile/experiments/toothbrush-reveal/) and makes repeated maintenance a participatory gesture.
 3. Arrange the original packaging as a translucent background wall, ordered by treatment stage.
 
-The [Wet/Dry Orthodontic Landscape — Concept v2](/CostOfSmile/experiments/wet-dry-orthodontic-landscape/) page brings together an AI-generated concept visualization, the arrangement, interpretation, materials, prototype steps and questions for Miu. It develops the terrain of [Orthodontic Strata](/CostOfSmile/experiments/orthodontic-strata/) through colour, contrast and brushing.
+The [Wet/Dry Orthodontic Landscape — Concept v2](/CostOfSmile/experiments/wet-dry-orthodontic-landscape/) page brings together an AI-generated concept visualization, the arrangement, interpretation, materials and prototype steps. It develops the terrain of [Orthodontic Strata](/CostOfSmile/experiments/orthodontic-strata/) through colour, contrast and brushing.
 
 The next material studies focus on pigment migration, coating removal, recolouring, liquid containment, toothpaste texture, packaging privacy and structural maintenance.
 
@@ -29,6 +29,6 @@ The next material studies focus on pigment migration, coating removal, recolouri
 2. 观众用牙刷刷褪山体表层，显露透明牙套，把反复护理转化为参与动作。
 3. 原始包装袋按治疗阶段排列成半透明医疗档案背墙。
 
-[Concept v2 实验页](/CostOfSmile/experiments/wet-dry-orthodontic-landscape/) 汇集 AI 概念效果图、作品布置、阐释、材料、小样步骤与给 Miu 的问题，并关联 Orthodontic Strata 和 Toothbrush Reveal。
+[Concept v2 实验页](/CostOfSmile/experiments/wet-dry-orthodontic-landscape/) 汇集 AI 概念效果图、作品布置、阐释、材料与小样步骤，并关联 Orthodontic Strata 和 Toothbrush Reveal。
 
 下一轮材料实验围绕颜料迁移、涂层移除、重新上色、液体容纳、牙膏质地、包装隐私和结构维护展开。
