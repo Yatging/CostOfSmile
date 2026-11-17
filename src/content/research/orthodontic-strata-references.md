@@ -1,6 +1,6 @@
 ---
 title: "Reading the dental landscape / 口中地层参考笔记"
-summary: "Seven precedents for the stage stack and dry garden. Artist and collection records sit alongside the specific decisions they inform."
+summary: "A synthesis of seven landscape precedents, with a directory of twelve verified individual case studies connecting dental matter, packaging, wearables and garden traditions."
 date: 2026-11-10
 category: Artwork
 tags: [body as project, consumption, time, installation]
@@ -8,6 +8,23 @@ draft: false
 ---
 
 [跳至中文全文 / Read in Chinese](#chinese)
+
+## Dedicated case studies / 独立艺术案例
+
+These references were checked against the linked artist, gallery, museum, university and temple records. The photographs remain on their credited source pages. Each case has a dedicated page for details, project relevance, material experiments and limitations.
+
+- [Claire Hashman — Hashman Bites](/CostOfSmile/research/artwork-claire-hashman-hashman-bites/)
+- [David Alban — dental forms in Dimensions Variable](/CostOfSmile/research/artwork-david-alban-dimensions-variable/)
+- [Katja Prins — Hybrids](/CostOfSmile/research/artwork-katja-prins-hybrids/)
+- [Sean Synnuck — Monument to a Perfect Smile](/CostOfSmile/research/artwork-sean-synnuck-monument-perfect-smile/)
+- [Maya Lin — Storm King Wavefield](/CostOfSmile/research/artwork-maya-lin-storm-king-wavefield/)
+- [Stephan Huber — Shiny Watzmann](/CostOfSmile/research/artwork-stephan-huber-shiny-watzmann/)
+- [Devon Stackonis — Retaining Walls](/CostOfSmile/research/artwork-devon-stackonis-retaining-walls/)
+- [Tara Donovan — Untitled (Plastic Cups)](/CostOfSmile/research/artwork-tara-donovan-untitled-plastic-cups/)
+- [Yuken Teruya — Notice-Forest](/CostOfSmile/research/artwork-yuken-teruya-notice-forest/)
+- [Ryōan-ji — Rock Garden](/CostOfSmile/research/site-ryoanji-rock-garden/)
+- [Mirei Shigemori — Tōfuku-ji Hassō Garden](/CostOfSmile/research/site-mirei-shigemori-tofukuji-hasso-garden/)
+- [Brian Thompson — River Journeys](/CostOfSmile/research/artwork-brian-thompson-river-journeys/)
 
 ## English
 
